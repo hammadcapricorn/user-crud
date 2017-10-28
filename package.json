@@ -1,0 +1,16 @@
+{
+  "name": "userCrud",
+  "version": "1.0.0",
+  "description": "CRUD application storing user information through a form",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.10.2",
+    "express": "^4.11.1",
+    "mongojs": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  }
+}
