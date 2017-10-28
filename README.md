@@ -1,8 +1,10 @@
 # Contact CRUD App
 
+<img src="https://demo.hammadsami.info/baxter/crud.PNG" alt="crud app">
+
 <h3>Guide</h3>
 
-    git clone 
+    git clone https://github.com/hammadcapricorn/user-crud.git
 
 then install the Node Dependencies with
 
