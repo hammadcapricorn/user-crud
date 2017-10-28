@@ -57,8 +57,20 @@ app.get('/contactlist/:id', function (req, res) {
 });
 
 
+app.put('/contactlist/:id', function (req, res) {
+    var id = req.params.id;
+    console.log(req.body.name);
+    db.contactlist.findAndModify({
+            query: {_id: mongojs.ObjectId(id)},
+            update: {$set: {name: req.body.name, email: req.body.email, skype: req.body.skype}},
+            new: true}, function (err, doc) {
+            res.json(doc);
+        }
+    );
+});
+
 app.listen(3000);
-console.log("Server running on port 3000")
+console.log("Server running on port 3000");
 // app.listen(process.env.PORT || 3000, function(){
 //   console.log('listening on', http.address().port);
 // });
